@@ -20,18 +20,18 @@
     </div>
     <div class="showcase-section">
       <nav class="navbar">
-        <p>EXAMPLE WEB SOLUTIONS</p>
+        <h1>EXAMPLE WEB SOLUTIONS</h1>
         <ul class="navbar-ul">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#services">SERVICES</a></li>
-          <li><a href="#pricing">PRICING</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+          <li><a class="navbar-link" href="#">HOME</a></li>
+          <li><a class="navbar-link" href="#services">SERVICES</a></li>
+          <li><a class="navbar-link" href="#pricing">PRICING</a></li>
+          <li><a class="navbar-link" href="#contact">CONTACT</a></li>
         </ul>
       </nav>
 
       <div class="showcase-content">
         <div class="showcase-text">
-          <h1>Web services you need - all in one place</h1>
+          <h2>Web services you need - all in one place</h2>
           <a href="#services">READ MORE</a>
         </div>
 
@@ -196,12 +196,15 @@
     <div class="contact-section" id="contact">
       <h2>Contact Us</h2>
       <form>
-        <input type="text" name="field3" placeholder="Name" />
-        <input type="email" name="field2" placeholder="Email" />
+        <label for="field1">Name</label>
+        <input type="text" name="field1" placeholder="John Doe" />
 
-        <textarea
+        <label for="field2">Email</label>
+        <input type="email" name="field2" placeholder="john@email.com" />
+        
+<label for="field3">Your Message</label>
+        <textarea name="field3"
           placeholder="Message"
-          onkeyup="adjust_textarea(this)"
         ></textarea>
         <input type="button" value="Send Message" />
       </form>
@@ -233,16 +236,16 @@
 
           <div class="footer-social">
             <p>FOLLOW US</p>
-            <a href="https://twitter.com"
+            <a href="#"
               ><i class="fab fa-twitter-square"></i
             ></a>
-            <a href="https://facebook.com"
+            <a href="#"
               ><i class="fab fa-facebook-square"></i
             ></a>
-            <a href="https://instagram.com"
+            <a href="#"
               ><i class="fab fa-instagram-square"></i
             ></a>
-            <a href="https://youtube.com"
+            <a href="#"
               ><i class="fab fa-youtube-square"></i
             ></a>
           </div>
@@ -250,14 +253,12 @@
       </div>
 
       <p class="copyright">
-        Copyright&copy; 2020 Example. All rights reserved.
+        Copyright&copy; 2021 Example. All rights reserved.
       </p>
     </footer>
 
     <script>
-      document
-        .querySelector(".menu-btn")
-        .addEventListener("click", () =>
+      document.querySelector(".menu-btn").addEventListener("click", () =>
           document.querySelector(".navbar-ul").classList.toggle("show")
         );
     </script>
