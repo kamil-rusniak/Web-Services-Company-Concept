@@ -1,2 +1,2 @@
-# Web-Services-Company-Concept
-Second project I made using HTML &amp; CSS (and a bit of JS for hamburger menu)
+# Web Services Company Concept
+Example company website I made to practice my HTML &amp; CSS 
