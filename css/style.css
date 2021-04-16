@@ -27,13 +27,8 @@ hr {
 ul {
   list-style: none;
 }
-
 .menu-btn {
-  cursor: pointer;
-  position: absolute;
-  top: 0.5rem;
-  right: 1.5rem;
-  z-index: 2;
+
   display: none;
 }
 
@@ -97,12 +92,12 @@ a {
 
 .showcase-content {
   display: flex;
-  padding: 4rem 3rem 1rem 2rem;
+  padding: 4rem 2rem 1rem 2rem;
 }
 
 .showcase-text {
   flex: 1;
-  margin: 3rem 3rem 0 3rem;
+  margin: 3rem 3rem 0 0;
   text-align: center;
   font-size: 2rem;
   color: #fff;
@@ -394,6 +389,7 @@ a {
 
 .contact-section textarea {
   height: 100px;
+  resize: vertical;
 }
 
 .contact-section input[type="button"] {
@@ -521,37 +517,52 @@ a {
 
   .menu-btn {
     display: block;
+    position: fixed;
+    cursor: pointer;
+    color: #000;
+    top: 0rem;
+    left:0rem;
+    z-index: 2;
+    padding: 1rem 0.5rem;
   }
 
-  .menu-btn:hover {
-    opacity: 0.5;
-  }
+
 
   .navbar-ul {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 300px;
     height: 50%;
-    padding: 1.5rem;
-    background: rgba(225, 225, 230, 0.63);
+    padding: 4rem 0.5rem;
+    background: #3a47d5ec;
     transform: translateX(-500px);
     transition: transform 0.5s ease-in-out;
+   
   }
 
-  .navbar-ul a {
-    padding: 0 0.4rem;
+  .navbar-link {
+    color: #fff;
+    font-weight: 500;
+    padding: 2rem 1rem;
+    transition: none;
   }
+
+  .navbar-link:hover:before {
+    transform: scale(0);
+}
 
   .navbar-ul li {
-    padding: 1rem;
+    padding: 0.6rem 0;
     border-bottom: #12d8fa solid 1px;
   }
 
   .navbar-ul li:last-child {
+    
     border-bottom: 0;
   }
+
 
   .navbar ul.navbar-ul.show {
     transform: translateX(-1rem);
