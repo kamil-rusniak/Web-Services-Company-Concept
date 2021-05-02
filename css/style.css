@@ -423,6 +423,11 @@ a {
   );
 }
 
+.copyright a{
+  color: #fff;
+  text-decoration: underline;
+}
+
 .big-footer {
   display: flex;
   justify-content: center;
